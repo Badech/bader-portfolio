@@ -8,24 +8,24 @@ import projectPlumbing from "@/assets/project-plumbing.jpg";
 const projects = [
   {
     img: projectHvac,
-    type: "HVAC Website Redesign",
+    type: "Strategic Redesign Concept",
     title: "Summit Air Comfort",
-    summary: "A Texas HVAC company needed to compete with bigger competitors online. I rebuilt their site to establish local authority, improve mobile experience, and create a frictionless path from visitor to booked service call.",
-    outcome: "Positioned to increase quote requests by 40%+ and own local search",
+    summary: "Concept redesign addressing a common HVAC challenge: outdated websites that lose quote requests to competitors. Strategic focus on trust signals, mobile-first UX, and conversion-optimized contact flow.",
+    outcome: "Designed to improve quote-request conversion and local market positioning",
   },
   {
     img: projectElectrician,
-    type: "Electrician Website",
+    type: "Concept Case Study",
     title: "BrightWire Electrical",
-    summary: "An established electrical contractor was invisible online and losing business to competitors. I created a professional web presence that communicates expertise, captures emergency calls, and drives steady lead flow.",
-    outcome: "Built to dominate local search and convert service inquiries",
+    summary: "Demo website showcasing how to build authority for electrical contractors with minimal web presence. Prioritizes click-to-call functionality, service area targeting, and emergency call capture.",
+    outcome: "Built to demonstrate effective local service conversion architecture",
   },
   {
     img: projectPlumbing,
-    type: "White-Label Agency Build",
+    type: "Demo Build",
     title: "ClearFlow Plumbing",
-    summary: "A marketing agency needed premium landing page execution for their plumbing client's paid ad campaigns. I delivered a conversion-focused experience that turns ad clicks into booked appointments.",
-    outcome: "Engineered to maximize ROI from every advertising dollar",
+    summary: "High-converting landing page concept for plumbing paid ad campaigns. Demonstrates campaign-aligned messaging, trust-building elements, and streamlined booking optimization for paid traffic.",
+    outcome: "Designed to maximize paid advertising ROI through strategic UX",
   },
 ];
 
@@ -35,9 +35,9 @@ const FeaturedWork = () => (
       <Reveal>
         <div className="section-header">
           <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Featured Work</p>
-          <h2 className="text-[2.5rem] md:text-5xl lg:text-[3.25rem] font-extrabold mb-6 leading-[1.1] tracking-[-0.02em]">Real HVAC and service businesses. Real results.</h2>
-          <p className="text-muted-foreground/90 text-base md:text-[1.0625rem] leading-[1.7] max-w-xl mx-auto">
-            Every website solves a specific business problem. Here's how I've helped local service companies strengthen their market position and drive revenue growth.
+          <h2 className="text-[2.5rem] md:text-5xl lg:text-[3.25rem] font-extrabold mb-6 leading-[1.1] tracking-[-0.02em]">Strategic work for HVAC and service businesses</h2>
+          <p className="text-muted-foreground/90 text-base md:text-[1.0625rem] leading-[1.7] max-w-2xl mx-auto mb-3">
+            These concept case studies demonstrate my strategic approach to designing conversion-focused websites for local service companies. Each project showcases how I think through real business challenges and build solutions that drive leads.
           </p>
         </div>
       </Reveal>

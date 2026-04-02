@@ -11,27 +11,27 @@ import projectPlumbing from "@/assets/project-plumbing.jpg";
 const projects = [
   {
     img: projectHvac,
-    type: "HVAC Website Redesign",
+    type: "Strategic Redesign Concept",
     title: "Summit Air Comfort",
-    challenge: "Outdated website with poor mobile experience and minimal organic lead generation. Losing quote requests to competitors with stronger online presence.",
+    challenge: "Common HVAC challenge: outdated website with poor mobile experience and minimal organic lead generation. Companies losing quote requests to competitors with stronger online presence.",
     approach: "Complete strategic redesign prioritizing trust signals, service page clarity, mobile-first UX, and conversion-optimized contact flow. Built with speed and local SEO foundations.",
-    result: "Built to improve trust, mobile clarity, and quote requests by 40%+",
+    result: "Designed to improve trust perception, mobile clarity, and quote-request conversion through clearer CTA flow, stronger trust signals, and better mobile hierarchy",
   },
   {
     img: projectElectrician,
-    type: "Electrician Website",
+    type: "Concept Case Study",
     title: "BrightWire Electrical",
-    challenge: "Minimal web presence limiting growth in competitive local market. No effective way to capture emergency service calls or showcase service areas.",
+    challenge: "Typical scenario: established electrical contractor with minimal web presence limiting growth in competitive local market. No effective way to capture emergency service calls or showcase service areas.",
     approach: "Lead-generation website engineered for local service conversion. Prioritized click-to-call functionality, service area targeting, mobile speed, and clear CTA structure.",
-    result: "Structured for local service conversion and clear CTA flow",
+    result: "Built to demonstrate effective emergency call capture, service area visibility, and conversion-optimized user flow for electrical contractors",
   },
   {
     img: projectPlumbing,
-    type: "White-Label Agency Build",
+    type: "Demo Build",
     title: "ClearFlow Plumbing",
-    challenge: "Marketing agency needed premium landing page execution for plumbing client's paid ad campaigns. Existing pages converting below 2%.",
-    approach: "High-converting landing page with campaign-aligned messaging, trust-building elements, streamlined booking form, and speed optimization for paid traffic.",
-    result: "Premium front-end execution for a service-business client",
+    challenge: "Scenario-based concept: marketing agency needs premium landing page execution for plumbing client's paid ad campaigns with low conversion rates.",
+    approach: "High-converting landing page concept with campaign-aligned messaging, trust-building elements, streamlined booking form, and speed optimization for paid traffic.",
+    result: "Designed to maximize paid advertising ROI through strategic messaging hierarchy, form optimization, and trust signal placement",
   },
 ];
 
@@ -44,9 +44,12 @@ const Work = () => (
           <Reveal>
             <div className="max-w-2xl">
               <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Portfolio</p>
-              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Selected work for HVAC and local service businesses</h1>
-              <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7]">
-                Real projects. Real results. Each one designed to solve a specific business challenge and built to deliver measurable outcomes for local service companies.
+              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Strategic work for HVAC and local service businesses</h1>
+              <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7] mb-4">
+                These concept case studies showcase how I approach real business challenges facing local service companies. Each project demonstrates strategic thinking, conversion-focused UX, and the design decisions that drive leads.
+              </p>
+              <p className="text-[0.9375rem] text-muted-foreground/70 leading-[1.7] italic">
+                Note: Projects shown are strategic concept work and demo builds created to demonstrate my approach to HVAC and service business web design.
               </p>
             </div>
           </Reveal>
