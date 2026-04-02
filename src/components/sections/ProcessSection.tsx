@@ -1,11 +1,11 @@
 import { Reveal } from "@/components/Reveal";
 
 const steps = [
-  { num: "01", title: "Audit & Discovery", desc: "I analyze what's working, what's broken, and what your competitors are doing better. You'll get honest feedback about where you're losing business and how to fix it." },
-  { num: "02", title: "Strategy Session", desc: "We align on your business goals, not design preferences. I'll map out exactly how the new site will position you, differentiate you, and drive more calls." },
-  { num: "03", title: "Design & Review", desc: "I create a custom design focused on trust, clarity, and conversion. You'll see exactly what you're getting before a single line of code is written." },
-  { num: "04", title: "Development", desc: "I build your site with modern, clean code — fast, mobile-optimized, and SEO-ready. No bloated WordPress themes or page builder garbage." },
-  { num: "05", title: "Launch & Support", desc: "I launch when it's ready to drive business, not when it's 'good enough.' Then I'm here to optimize, adjust, and help you maximize results." },
+  { num: "01", title: "Free Website Audit", desc: "I analyze your current site (or competitor sites) to identify exactly where you're losing calls. You'll get honest feedback about trust gaps, mobile issues, and conversion problems — before we discuss any project." },
+  { num: "02", title: "Strategy Session", desc: "We align on your business goals, not design preferences. I'll map out exactly how the new site will position you, differentiate you, and drive more calls. Clear scope, clear timeline, clear pricing." },
+  { num: "03", title: "Design & Review", desc: "I create a custom design focused on trust, clarity, and conversion. You'll see exactly what you're getting before a single line of code is written. Revisions included until you're confident." },
+  { num: "04", title: "Development & Testing", desc: "I build your site with modern, clean code — fast, mobile-optimized, and SEO-ready. Every page tested across devices and browsers before you see it." },
+  { num: "05", title: "Launch & Ongoing Support", desc: "I launch when it's ready to drive business, not when it's 'good enough.' Post-launch, I monitor performance and make adjustments to maximize your results." },
 ];
 
 const ProcessSection = () => (
