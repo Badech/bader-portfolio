@@ -9,7 +9,7 @@ const Footer = () => (
             <span className="font-bold">Bader</span> <span className="font-semibold text-foreground/70">Echchalh</span>
           </Link>
           <p className="mt-4 text-[0.9375rem] text-muted-foreground/80 leading-[1.7]">
-            Premium web design for HVAC and local service businesses.
+            Premium websites for HVAC and local service businesses.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ const Footer = () => (
             </p>
           </div>
           <Link to="/contact" className="inline-block mt-4 text-[0.9375rem] font-semibold text-primary hover:underline">
-            Book a Call →
+            Request a Free Audit →
           </Link>
         </div>
       </div>

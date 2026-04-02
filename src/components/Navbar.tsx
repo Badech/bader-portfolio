@@ -41,7 +41,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <Button variant="hero" size="default" asChild className="shadow-md hover:shadow-lg">
-            <Link to="/contact">Book a Call</Link>
+            <Link to="/contact">Request a Free Audit</Link>
           </Button>
         </div>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Button variant="hero" size="lg" className="mt-4 shadow-md" asChild>
-              <Link to="/contact" onClick={() => setOpen(false)}>Book a Call</Link>
+              <Link to="/contact" onClick={() => setOpen(false)}>Request a Free Audit</Link>
             </Button>
           </div>
         </div>

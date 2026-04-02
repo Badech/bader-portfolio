@@ -12,20 +12,20 @@ const Hero = () => (
           <Reveal>
             <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-primary/[0.03] border border-primary/[0.08] text-primary text-[13px] font-semibold mb-8 backdrop-blur-sm">
               <Zap size={13} strokeWidth={2.5} />
-              Independent Web Partner for Service Businesses
+              Independent Web Partner for HVAC &amp; Local Service Businesses
             </div>
           </Reveal>
 
           <Reveal delay={0.05}>
             <h1 className="text-[2.75rem] sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] leading-[1.06] font-extrabold mb-7 tracking-[-0.02em]">
-              Your HVAC or service business deserves a website that{" "}
-              <span className="text-gradient">generates calls, not just traffic</span>
+              Premium websites for HVAC and local service businesses that need{" "}
+              <span className="text-gradient">more calls, more trust, and better leads</span>
             </h1>
           </Reveal>
 
           <Reveal delay={0.1}>
             <p className="text-[1.0625rem] leading-[1.7] text-muted-foreground mb-10 max-w-xl">
-              I'm your independent web partner, not a freelancer with a portfolio. I build conversion-focused websites for U.S. HVAC companies, plumbers, and electricians who need a premium online presence that drives real business growth.
+              I design and build conversion-focused websites for U.S. HVAC companies, plumbers, and electricians — with stronger messaging, cleaner UX, and better lead flow from the first click to the contact form.
             </p>
           </Reveal>
 
@@ -33,11 +33,11 @@ const Hero = () => (
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl" asChild className="shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30">
                 <Link to="/contact">
-                  Get a Strategy Call <ArrowRight size={16} strokeWidth={2.5} />
+                  Request a Free Audit <ArrowRight size={16} strokeWidth={2.5} />
                 </Link>
               </Button>
               <Button variant="hero-outline" size="xl" asChild>
-                <Link to="/contact">See Your Website Audit</Link>
+                <Link to="/contact">Book a Call</Link>
               </Button>
             </div>
           </Reveal>

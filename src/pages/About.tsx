@@ -29,14 +29,14 @@ const About = () => (
             <Reveal delay={0.1}>
               <div>
                 <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">About</p>
-                <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Your independent web partner for service business growth</h1>
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Independent web partner for HVAC and local service business growth</h1>
 
                 <div className="space-y-5 text-muted-foreground leading-relaxed">
                   <p>
-                    I'm Bader Echchalh — I help HVAC companies, plumbers, and electricians win more business online. I'm not a freelancer with a portfolio — I'm your strategic web partner who treats your website as the revenue-critical business asset it is.
+                    I'm Bader Echchalh — I help HVAC companies, plumbers, and electricians win more business online. I'm your strategic web partner who treats your website as the revenue-critical business asset it is.
                   </p>
                   <p>
-                    I started specializing in service businesses because I kept seeing the same pattern: excellent companies losing opportunities to competitors with better websites. Not better service. Not better pricing. Just better online presence.
+                    I started specializing in local service businesses because I kept seeing the same pattern: excellent companies losing opportunities to competitors with better websites. Not better service. Not better pricing. Just better online presence.
                   </p>
                   <p>
                     That became my mission. I build websites that position you as the obvious choice in your market, communicate your expertise instantly, and convert visitors into paying customers — not just traffic.

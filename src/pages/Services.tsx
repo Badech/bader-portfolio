@@ -10,7 +10,7 @@ const services = [
   {
     icon: Palette,
     title: "Website Design",
-    who: "Service businesses launching or upgrading their online presence.",
+    who: "HVAC companies, plumbers, and electricians launching or upgrading their online presence.",
     problem: "You need a website that positions you as the trusted choice in your market — not just a pretty page.",
     includes: ["Custom UI/UX design", "Responsive development", "Conversion-optimized layout", "SEO-ready structure", "Contact form & CTA integration"],
     outcome: "A premium website that builds trust and generates leads from day one.",
@@ -18,7 +18,7 @@ const services = [
   {
     icon: RefreshCw,
     title: "Website Redesign",
-    who: "Businesses with an outdated or underperforming website.",
+    who: "Local service businesses with an outdated or underperforming website.",
     problem: "Your current site doesn't reflect the quality of your work and it's costing you customers.",
     includes: ["Full UX/UI audit", "Strategic redesign", "Content restructuring", "Speed optimization", "Mobile-first rebuild"],
     outcome: "A modern, conversion-ready website that matches your business reputation.",
@@ -26,7 +26,7 @@ const services = [
   {
     icon: BarChart3,
     title: "Landing Pages",
-    who: "Companies running paid ads or campaigns that need dedicated landing experiences.",
+    who: "HVAC and service companies running paid ads or campaigns that need dedicated landing experiences.",
     problem: "Generic pages waste ad spend. You need pages engineered for specific campaigns and audiences.",
     includes: ["Campaign-specific design", "A/B testing ready", "Form optimization", "Speed-optimized delivery", "Analytics integration"],
     outcome: "Higher conversion rates from every dollar you spend on advertising.",
@@ -34,7 +34,7 @@ const services = [
   {
     icon: Layers,
     title: "Lead Capture Optimization",
-    who: "Businesses with traffic but low conversion rates.",
+    who: "Local service businesses with traffic but low conversion rates.",
     problem: "Visitors land on your site but leave without taking action. Something is broken in the experience.",
     includes: ["Conversion audit", "CTA redesign", "Form UX improvement", "Trust signal enhancement", "Mobile experience fixes"],
     outcome: "More leads from the same amount of traffic — without spending more on ads.",
@@ -58,9 +58,9 @@ const Services = () => (
           <Reveal>
             <div className="max-w-2xl">
               <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Services</p>
-              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">What I offer</h1>
+              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Premium web solutions for HVAC and local service businesses</h1>
               <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7]">
-                Focused services designed to help HVAC and local service businesses generate more leads, earn more trust, and convert better.
+                Focused services designed to help you generate more leads, earn more trust, and convert better.
               </p>
             </div>
           </Reveal>

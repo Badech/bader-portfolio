@@ -51,11 +51,11 @@ const Contact = () => {
                 <div>
                   <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">Contact</p>
                   <h1 className="text-4xl md:text-5xl font-extrabold mb-5">
-                    Let's talk about your project
+                    Let's build a website that wins business
                   </h1>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                    Whether you need a new website, a redesign, or a strategic audit — fill out the form and I'll
-                    get back to you within 24 hours with next steps.
+                    Whether you need a new website, a redesign, or a free audit — fill out the form and I'll
+                    get back to you within 24 hours with a strategic plan.
                   </p>
 
                   <div className="space-y-5">

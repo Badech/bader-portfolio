@@ -35,9 +35,9 @@ const FeaturedWork = () => (
       <Reveal>
         <div className="section-header">
           <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Featured Work</p>
-          <h2 className="text-[2.5rem] md:text-5xl lg:text-[3.25rem] font-extrabold mb-6 leading-[1.1] tracking-[-0.02em]">Real businesses. Real challenges. Real results.</h2>
+          <h2 className="text-[2.5rem] md:text-5xl lg:text-[3.25rem] font-extrabold mb-6 leading-[1.1] tracking-[-0.02em]">Real HVAC and service businesses. Real results.</h2>
           <p className="text-muted-foreground/90 text-base md:text-[1.0625rem] leading-[1.7] max-w-xl mx-auto">
-            I don't build portfolio pieces — I solve business problems. Here's how I've helped service companies strengthen their market position and drive revenue growth.
+            Every website solves a specific business problem. Here's how I've helped local service companies strengthen their market position and drive revenue growth.
           </p>
         </div>
       </Reveal>

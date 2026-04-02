@@ -44,9 +44,9 @@ const Work = () => (
           <Reveal>
             <div className="max-w-2xl">
               <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Portfolio</p>
-              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Selected work</h1>
+              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Selected work for HVAC and local service businesses</h1>
               <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7]">
-                Real projects. Real results. Each one designed to solve a specific business challenge and built to deliver measurable outcomes.
+                Real projects. Real results. Each one designed to solve a specific business challenge and built to deliver measurable outcomes for local service companies.
               </p>
             </div>
           </Reveal>

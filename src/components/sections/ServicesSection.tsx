@@ -6,7 +6,7 @@ import { Palette, RefreshCw, BarChart3 } from "lucide-react";
 const services = [
   {
     icon: Palette,
-    title: "Premium Website for Service Businesses",
+    title: "Premium Websites for HVAC & Local Services",
     desc: "Your website should be your best salesperson. I build custom sites that establish authority, build trust instantly, and turn visitors into customers — not just browsers.",
     points: ["Strategic positioning that differentiates you", "Conversion-focused UX and messaging", "Mobile-first, speed-optimized build", "Built to rank and convert locally"],
   },
@@ -30,9 +30,9 @@ const ServicesSection = () => (
       <Reveal>
         <div className="section-header">
           <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Services</p>
-          <h2 className="text-[2.5rem] md:text-5xl lg:text-[3.25rem] font-extrabold mb-6 leading-[1.1] tracking-[-0.02em]">Strategic web solutions that grow your business</h2>
+          <h2 className="text-[2.5rem] md:text-5xl lg:text-[3.25rem] font-extrabold mb-6 leading-[1.1] tracking-[-0.02em]">Premium web solutions for HVAC and local service businesses</h2>
           <p className="text-muted-foreground/90 text-base md:text-[1.0625rem] leading-[1.7] max-w-xl mx-auto">
-            I don't just design websites — I build digital revenue engines. Every service is designed to solve a specific business problem and deliver measurable ROI.
+            Every service is designed to solve a specific business problem and deliver measurable ROI for local service companies.
           </p>
         </div>
       </Reveal>

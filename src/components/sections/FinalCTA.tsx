@@ -21,11 +21,11 @@ const FinalCTA = () => (
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button size="xl" className="bg-white text-foreground hover:bg-white/95 shadow-xl hover:shadow-2xl font-semibold transition-all duration-300" asChild>
                 <Link to="/contact">
-                  Get a Strategy Call <ArrowRight size={16} strokeWidth={2.5} />
+                  Request a Free Audit <ArrowRight size={16} strokeWidth={2.5} />
                 </Link>
               </Button>
               <Button size="xl" className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-foreground font-semibold shadow-xl hover:shadow-2xl transition-all duration-300" asChild>
-                <Link to="/contact">Request a Free Audit</Link>
+                <Link to="/contact">Book a Call</Link>
               </Button>
             </div>
           </div>

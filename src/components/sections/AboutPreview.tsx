@@ -25,13 +25,13 @@ const AboutPreview = () => (
         <Reveal delay={0.1}>
           <div>
             <h2 className="text-[2.25rem] md:text-[2.75rem] lg:text-5xl font-extrabold mb-6 leading-[1.12] tracking-[-0.02em]">
-              Your independent web partner, not another freelancer
+              Independent web partner for HVAC and local service businesses
             </h2>
             <p className="text-muted-foreground/80 leading-[1.7] mb-5 text-[0.9375rem]">
-              I'm Bader Echchalh — I help HVAC companies, plumbers, and electricians compete and win online. Unlike typical freelancers, I approach your website as a strategic business asset, not a creative project.
+              I'm Bader Echchalh — I help HVAC companies, plumbers, and electricians compete and win online. I approach your website as a strategic business asset, not a creative project.
             </p>
             <p className="text-muted-foreground/80 leading-[1.7] mb-8 text-[0.9375rem]">
-              I work with service business owners who understand that in today's market, your website is your most important sales tool. My work focuses on positioning, trust, conversion, and lead generation — because beautiful design means nothing if it doesn't drive revenue.
+              I work with local service business owners who understand that your website is your most important sales tool. My work focuses on positioning, trust, conversion, and lead generation — because beautiful design means nothing if it doesn't drive revenue.
             </p>
             <Button variant="default" size="lg" asChild className="shadow-md hover:shadow-lg transition-shadow">
               <Link to="/about">More About Me →</Link>
