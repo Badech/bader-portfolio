@@ -72,10 +72,42 @@ const AuditBreakdown = () => (
       </div>
 
       <Reveal delay={0.3}>
-        <div className="mt-12 max-w-3xl mx-auto p-6 rounded-xl bg-primary/[0.03] border border-primary/[0.08]">
-          <p className="text-sm text-muted-foreground/90 leading-relaxed text-center">
-            <span className="font-semibold text-foreground">Free website audit included.</span> Before we discuss any project, I'll review your current site (or your competitor's) and show you exactly where the opportunities are. No obligation, no pressure — just honest feedback.
-          </p>
+        <div className="mt-12 max-w-3xl mx-auto">
+          <div className="p-6 rounded-xl bg-primary/[0.03] border border-primary/[0.08] mb-6">
+            <p className="text-sm text-muted-foreground/90 leading-relaxed text-center">
+              <span className="font-semibold text-foreground">Free website audit included with every inquiry.</span> I'll review your current site and show you exactly where you're losing calls and how to fix it. No obligation, no pressure — just clear, actionable feedback.
+            </p>
+          </div>
+          
+          <div className="p-7 rounded-xl bg-card border border-border/60">
+            <h3 className="text-sm font-bold text-foreground mb-4 text-center">Example: What I look for in a typical audit</h3>
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm">
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-0.5">→</span>
+                <span className="text-muted-foreground/80">Homepage clarity: Can visitors understand your offer in 3 seconds?</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-0.5">→</span>
+                <span className="text-muted-foreground/80">Mobile CTA visibility: Can someone call you in two taps?</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-0.5">→</span>
+                <span className="text-muted-foreground/80">Trust signals: Reviews, certifications, guarantees visible?</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-0.5">→</span>
+                <span className="text-muted-foreground/80">Service area clarity: Do visitors know if you serve them?</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-0.5">→</span>
+                <span className="text-muted-foreground/80">Contact form friction: How many fields are blocking conversions?</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-0.5">→</span>
+                <span className="text-muted-foreground/80">Page speed: Are mobile users bouncing before the page loads?</span>
+              </div>
+            </div>
+          </div>
         </div>
       </Reveal>
     </div>

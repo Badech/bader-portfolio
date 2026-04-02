@@ -2,89 +2,69 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FinalCTA from "@/components/sections/FinalCTA";
 import { Reveal } from "@/components/Reveal";
-import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
-import projectHvac from "@/assets/project-hvac.jpg";
-import projectElectrician from "@/assets/project-electrician.jpg";
-import projectPlumbing from "@/assets/project-plumbing.jpg";
-
-const projects = [
-  {
-    img: projectHvac,
-    type: "Strategic Redesign Concept",
-    title: "Summit Air Comfort",
-    challenge: "Common HVAC challenge: outdated website with poor mobile experience and minimal organic lead generation. Companies losing quote requests to competitors with stronger online presence.",
-    approach: "Complete strategic redesign prioritizing trust signals, service page clarity, mobile-first UX, and conversion-optimized contact flow. Built with speed and local SEO foundations.",
-    result: "Designed to improve trust perception, mobile clarity, and quote-request conversion through clearer CTA flow, stronger trust signals, and better mobile hierarchy",
-  },
-  {
-    img: projectElectrician,
-    type: "Concept Case Study",
-    title: "BrightWire Electrical",
-    challenge: "Typical scenario: established electrical contractor with minimal web presence limiting growth in competitive local market. No effective way to capture emergency service calls or showcase service areas.",
-    approach: "Lead-generation website engineered for local service conversion. Prioritized click-to-call functionality, service area targeting, mobile speed, and clear CTA structure.",
-    result: "Built to demonstrate effective emergency call capture, service area visibility, and conversion-optimized user flow for electrical contractors",
-  },
-  {
-    img: projectPlumbing,
-    type: "Demo Build",
-    title: "ClearFlow Plumbing",
-    challenge: "Scenario-based concept: marketing agency needs premium landing page execution for plumbing client's paid ad campaigns with low conversion rates.",
-    approach: "High-converting landing page concept with campaign-aligned messaging, trust-building elements, streamlined booking form, and speed optimization for paid traffic.",
-    result: "Designed to maximize paid advertising ROI through strategic messaging hierarchy, form optimization, and trust signal placement",
-  },
-];
+import { FileText, Target, Zap } from "lucide-react";
 
 const Work = () => (
   <>
     <Navbar />
     <main className="pt-24 md:pt-32">
-      <section className="section-padding pb-20 md:pb-24">
+      <section className="section-padding pb-20 md:pb-32">
         <div className="container-wide">
           <Reveal>
-            <div className="max-w-2xl">
+            <div className="max-w-3xl mx-auto text-center">
               <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Portfolio</p>
-              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Strategic work for HVAC and local service businesses</h1>
-              <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7] mb-4">
-                These concept case studies showcase how I approach real business challenges facing local service companies. Each project demonstrates strategic thinking, conversion-focused UX, and the design decisions that drive leads.
+              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">Client case studies coming soon</h1>
+              <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7] mb-8">
+                Selected case studies will be added here as projects are completed. Each will showcase strategy, conversion decisions, and measurable improvements for HVAC and local service businesses.
               </p>
-              <p className="text-[0.9375rem] text-muted-foreground/70 leading-[1.7] italic">
-                Note: Projects shown are strategic concept work and demo builds created to demonstrate my approach to HVAC and service business web design.
-              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <Reveal delay={0.1}>
+                  <div className="p-8 rounded-[14px] border border-dashed border-border/60 bg-card text-center">
+                    <div className="w-14 h-14 rounded-xl bg-primary/[0.04] flex items-center justify-center mb-5 mx-auto">
+                      <FileText size={22} className="text-primary/60" strokeWidth={2} />
+                    </div>
+                    <p className="text-[11px] font-bold text-primary/70 uppercase tracking-[0.12em] mb-3">Case Study Coming Soon</p>
+                    <p className="text-[0.9375rem] text-muted-foreground/70 leading-[1.65]">
+                      HVAC website redesign with full conversion strategy breakdown
+                    </p>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={0.15}>
+                  <div className="p-8 rounded-[14px] border border-dashed border-border/60 bg-card text-center">
+                    <div className="w-14 h-14 rounded-xl bg-primary/[0.04] flex items-center justify-center mb-5 mx-auto">
+                      <Target size={22} className="text-primary/60" strokeWidth={2} />
+                    </div>
+                    <p className="text-[11px] font-bold text-primary/70 uppercase tracking-[0.12em] mb-3">Strategic Breakdown Coming Soon</p>
+                    <p className="text-[0.9375rem] text-muted-foreground/70 leading-[1.65]">
+                      Local service lead capture optimization walkthrough
+                    </p>
+                  </div>
+                </Reveal>
+
+                <Reveal delay={0.2}>
+                  <div className="p-8 rounded-[14px] border border-dashed border-border/60 bg-card text-center">
+                    <div className="w-14 h-14 rounded-xl bg-primary/[0.04] flex items-center justify-center mb-5 mx-auto">
+                      <Zap size={22} className="text-primary/60" strokeWidth={2} />
+                    </div>
+                    <p className="text-[11px] font-bold text-primary/70 uppercase tracking-[0.12em] mb-3">Selected Work Coming Soon</p>
+                    <p className="text-[0.9375rem] text-muted-foreground/70 leading-[1.65]">
+                      Landing page with detailed UX decision analysis
+                    </p>
+                  </div>
+                </Reveal>
+              </div>
+
+              <Reveal delay={0.25}>
+                <div className="mt-12 p-6 rounded-xl bg-primary/[0.03] border border-primary/[0.08] max-w-2xl mx-auto">
+                  <p className="text-sm text-muted-foreground/90 leading-relaxed">
+                    <span className="font-semibold text-foreground">Currently accepting new projects.</span> If you're an HVAC company, plumber, or electrician looking to improve your website, I'd be happy to review your current site and discuss how we can work together.
+                  </p>
+                </div>
+              </Reveal>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      <section className="section-padding pb-24 md:pb-32">
-        <div className="container-wide space-y-28 md:space-y-32">
-          {projects.map((p, i) => (
-            <Reveal key={p.title} delay={i * 0.08}>
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <div className={`rounded-2xl overflow-hidden border border-border/60 shadow-[0_20px_70px_-12px_rgba(0,0,0,0.15)] ${i % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <img src={p.img} alt={p.title} loading="lazy" width={960} height={640} className="w-full h-auto" />
-                </div>
-                <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <p className="text-[10px] font-bold text-primary/90 uppercase tracking-[0.12em] mb-3">{p.type}</p>
-                  <h2 className="text-[1.75rem] md:text-[2.25rem] font-bold mb-6 leading-[1.2] tracking-tight">{p.title}</h2>
-                  <div className="space-y-5">
-                    <div>
-                      <h3 className="text-[0.875rem] font-bold text-foreground mb-2 tracking-tight">Challenge</h3>
-                      <p className="text-[0.9375rem] leading-[1.65] text-muted-foreground/80">{p.challenge}</p>
-                    </div>
-                    <div>
-                      <h3 className="text-[0.875rem] font-bold text-foreground mb-2 tracking-tight">Approach</h3>
-                      <p className="text-[0.9375rem] leading-[1.65] text-muted-foreground/80">{p.approach}</p>
-                    </div>
-                    <div>
-                      <h3 className="text-[0.875rem] font-bold text-foreground mb-2 tracking-tight">Result</h3>
-                      <p className="text-[0.9375rem] font-bold text-accent leading-[1.5]">{p.result}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          ))}
         </div>
       </section>
 
