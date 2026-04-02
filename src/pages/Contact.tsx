@@ -58,7 +58,7 @@ const Contact = () => {
                     get back to you within 24 hours with a strategic plan.
                   </p>
 
-                  <div className="space-y-5">
+                  <div className="space-y-5 mb-8">
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
                       <div className="w-9 h-9 rounded-lg bg-primary/5 flex items-center justify-center">
                         <Mail size={16} className="text-primary" />
@@ -71,23 +71,40 @@ const Contact = () => {
                       <div className="w-9 h-9 rounded-lg bg-primary/5 flex items-center justify-center">
                         <Clock size={16} className="text-primary" />
                       </div>
-                      Typical response time: under 24 hours
+                      Response time: Under 24 hours
                     </div>
                   </div>
 
-                  {/* Calendar embed placeholder */}
-                  <div className="mt-8 p-6 rounded-xl border border-dashed border-border bg-section-alt text-center">
-                    <p className="text-sm text-muted-foreground">Calendar booking widget can be embedded here</p>
+                  <div className="p-6 rounded-xl bg-primary/[0.03] border border-primary/[0.08]">
+                    <p className="text-sm font-semibold text-foreground mb-2">What happens next?</p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span>I'll review your inquiry and respond within 24 hours</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span>We'll discuss your project goals and challenges</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span>I'll provide a strategic approach and clear next steps</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </Reveal>
 
               <Reveal delay={0.1}>
                 <form onSubmit={handleSubmit} className="space-y-5 p-8 rounded-xl border border-border bg-card shadow-sm">
-                  {/* Web3Forms Access Key */}
+                  {/* Web3Forms Configuration */}
                   <input type="hidden" name="access_key" value="5ab5d119-d807-4cc1-909d-3612217621a4" />
                   <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio" />
                   <input type="hidden" name="from_name" value="Bader Portfolio Contact Form" />
+                  <input type="hidden" name="redirect" value="false" />
+                  
+                  {/* Honeypot Spam Protection */}
+                  <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} />
                   
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -161,15 +178,22 @@ const Contact = () => {
 
                   <div className="space-y-2">
                     <Label htmlFor="message">Project Details</Label>
-                    <Textarea id="message" name="message" placeholder="Tell me about your project, goals, and any challenges you're facing..." rows={4} />
+                    <Textarea id="message" name="message" placeholder="Tell me about your project, goals, and any challenges you're facing..." rows={4} required />
                   </div>
 
-                  <Button variant="hero" size="lg" type="submit" className="w-full" disabled={submitting}>
-                    {submitting ? "Sending..." : "Send Inquiry"}
+                  <Button variant="hero" size="lg" type="submit" className="w-full shadow-lg hover:shadow-xl transition-all" disabled={submitting}>
+                    {submitting ? (
+                      <span className="flex items-center justify-center gap-2">
+                        <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                        Sending Your Inquiry...
+                      </span>
+                    ) : (
+                      "Send Inquiry"
+                    )}
                   </Button>
 
-                  <p className="text-xs text-muted-foreground text-center">
-                    No spam. No obligation. Just a conversation about how I can help your business grow.
+                  <p className="text-xs text-muted-foreground/80 text-center leading-relaxed">
+                    I'll review your inquiry personally and respond within 24 hours with next steps. No spam, no automated replies — just a real conversation about your project.
                   </p>
                 </form>
               </Reveal>
