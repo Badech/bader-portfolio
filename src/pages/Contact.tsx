@@ -13,13 +13,31 @@ import { toast } from "sonner";
 const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => {
+
+    const formData = new FormData(e.currentTarget);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Your inquiry has been sent. I'll get back to you within 24 hours.");
+        e.currentTarget.reset();
+      } else {
+        toast.error("Something went wrong. Please try again or email me directly.");
+      }
+    } catch (error) {
+      toast.error("Something went wrong. Please try again or email me directly.");
+    } finally {
       setSubmitting(false);
-      toast.success("Your inquiry has been sent. I'll get back to you within 24 hours.");
-    }, 1200);
+    }
   };
 
   return (
@@ -66,79 +84,84 @@ const Contact = () => {
 
               <Reveal delay={0.1}>
                 <form onSubmit={handleSubmit} className="space-y-5 p-8 rounded-xl border border-border bg-card shadow-sm">
+                  {/* Web3Forms Access Key */}
+                  <input type="hidden" name="access_key" value="5ab5d119-d807-4cc1-909d-3612217621a4" />
+                  <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio" />
+                  <input type="hidden" name="from_name" value="Bader Portfolio Contact Form" />
+                  
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name</Label>
-                      <Input id="name" placeholder="Your name" required />
+                      <Input id="name" name="name" placeholder="Your name" required />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="you@company.com" required />
+                      <Input id="email" name="email" type="email" placeholder="you@company.com" required />
                     </div>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="company">Company</Label>
-                      <Input id="company" placeholder="Your company" />
+                      <Input id="company" name="company" placeholder="Your company" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="website">Current Website</Label>
-                      <Input id="website" placeholder="www.yoursite.com" />
+                      <Input id="website" name="website" placeholder="www.yoursite.com" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="help">What do you need help with?</Label>
-                    <Select>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a service" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="new-website">New Website Design</SelectItem>
-                        <SelectItem value="redesign">Website Redesign</SelectItem>
-                        <SelectItem value="landing-page">Landing Page</SelectItem>
-                        <SelectItem value="audit">Website Audit</SelectItem>
-                        <SelectItem value="white-label">White-Label Work</SelectItem>
-                        <SelectItem value="other">Something Else</SelectItem>
-                      </SelectContent>
-                    </Select>
+                    <Label htmlFor="service">What do you need help with?</Label>
+                    <select 
+                      id="service" 
+                      name="service" 
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                    >
+                      <option value="">Select a service</option>
+                      <option value="new-website">New Website Design</option>
+                      <option value="redesign">Website Redesign</option>
+                      <option value="landing-page">Landing Page</option>
+                      <option value="audit">Website Audit</option>
+                      <option value="white-label">White-Label Work</option>
+                      <option value="other">Something Else</option>
+                    </select>
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label>Budget Range</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select range" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="2k-5k">$2,000 – $5,000</SelectItem>
-                          <SelectItem value="5k-10k">$5,000 – $10,000</SelectItem>
-                          <SelectItem value="10k-20k">$10,000 – $20,000</SelectItem>
-                          <SelectItem value="20k+">$20,000+</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      <Label htmlFor="budget">Budget Range</Label>
+                      <select 
+                        id="budget" 
+                        name="budget" 
+                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      >
+                        <option value="">Select range</option>
+                        <option value="2k-5k">$2,000 – $5,000</option>
+                        <option value="5k-10k">$5,000 – $10,000</option>
+                        <option value="10k-20k">$10,000 – $20,000</option>
+                        <option value="20k+">$20,000+</option>
+                      </select>
                     </div>
                     <div className="space-y-2">
-                      <Label>Timeline</Label>
-                      <Select>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select timeline" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="asap">ASAP</SelectItem>
-                          <SelectItem value="1-2-months">1–2 months</SelectItem>
-                          <SelectItem value="3-months">3+ months</SelectItem>
-                          <SelectItem value="flexible">Flexible</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      <Label htmlFor="timeline">Timeline</Label>
+                      <select 
+                        id="timeline" 
+                        name="timeline" 
+                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                      >
+                        <option value="">Select timeline</option>
+                        <option value="asap">ASAP</option>
+                        <option value="1-2-months">1–2 months</option>
+                        <option value="3-months">3+ months</option>
+                        <option value="flexible">Flexible</option>
+                      </select>
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <Label htmlFor="message">Project Details</Label>
-                    <Textarea id="message" placeholder="Tell me about your project, goals, and any challenges you're facing..." rows={4} />
+                    <Textarea id="message" name="message" placeholder="Tell me about your project, goals, and any challenges you're facing..." rows={4} />
                   </div>
 
                   <Button variant="hero" size="lg" type="submit" className="w-full" disabled={submitting}>
