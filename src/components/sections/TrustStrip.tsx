@@ -2,22 +2,22 @@ import { Reveal } from "@/components/Reveal";
 import { Target, Smartphone, Zap, Search, PhoneCall, CheckCircle } from "lucide-react";
 
 const items = [
-  { icon: Target, label: "Conversion-focused" },
-  { icon: Smartphone, label: "Mobile-first" },
-  { icon: Zap, label: "Fast-loading" },
-  { icon: Search, label: "SEO-ready" },
-  { icon: PhoneCall, label: "Built for leads" },
-  { icon: CheckCircle, label: "Clear process" },
+  { icon: Target, label: "Built for Lead Generation" },
+  { icon: Smartphone, label: "Mobile-First Design" },
+  { icon: Zap, label: "Performance-Optimized" },
+  { icon: Search, label: "SEO-Ready from Day One" },
+  { icon: PhoneCall, label: "Proven Conversion Approach" },
+  { icon: CheckCircle, label: "Transparent Partnership" },
 ];
 
 const TrustStrip = () => (
-  <section className="border-y border-border bg-section-alt">
-    <div className="container-wide section-padding py-8 md:py-10">
+  <section className="border-y border-border/50 bg-section-alt">
+    <div className="container-wide section-padding py-12 md:py-14">
       <Reveal>
-        <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
+        <div className="flex flex-wrap justify-center gap-x-12 gap-y-6">
           {items.map((item) => (
-            <div key={item.label} className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-              <item.icon size={16} className="text-primary" />
+            <div key={item.label} className="flex items-center gap-2.5 text-[13px] font-semibold text-muted-foreground/90">
+              <item.icon size={16} className="text-primary" strokeWidth={2.5} />
               {item.label}
             </div>
           ))}

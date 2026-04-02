@@ -13,7 +13,7 @@ const About = () => (
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
             <Reveal>
               <div className="sticky top-28">
-                <div className="rounded-2xl overflow-hidden shadow-xl max-w-md">
+                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-border/50 max-w-md">
                   <img
                     src={portrait}
                     alt="Bader Echchalh"
@@ -29,43 +29,37 @@ const About = () => (
             <Reveal delay={0.1}>
               <div>
                 <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">About</p>
-                <h1 className="text-4xl md:text-5xl font-extrabold mb-6">I build websites that grow businesses</h1>
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Your independent web partner for service business growth</h1>
 
                 <div className="space-y-5 text-muted-foreground leading-relaxed">
                   <p>
-                    I'm Bader Echchalh — a freelance web designer, front-end developer, and conversion specialist.
-                    I help U.S. service businesses build websites that look premium and perform in the real world.
+                    I'm Bader Echchalh — I help HVAC companies, plumbers, and electricians win more business online. I'm not a freelancer with a portfolio — I'm your strategic web partner who treats your website as the revenue-critical business asset it is.
                   </p>
                   <p>
-                    I got into this work because I saw too many great businesses — HVAC companies, plumbers, electricians —
-                    losing customers to competitors with better websites. Not better services. Better websites.
+                    I started specializing in service businesses because I kept seeing the same pattern: excellent companies losing opportunities to competitors with better websites. Not better service. Not better pricing. Just better online presence.
                   </p>
                   <p>
-                    That didn't sit right with me. So I focused my career on bridging that gap: combining premium design,
-                    clean development, and conversion strategy to help service businesses compete and win online.
+                    That became my mission. I build websites that position you as the obvious choice in your market, communicate your expertise instantly, and convert visitors into paying customers — not just traffic.
                   </p>
 
-                  <h2 className="text-xl font-bold text-foreground pt-4">My approach</h2>
+                  <h2 className="text-xl font-bold text-foreground pt-4">How I work</h2>
                   <p>
-                    I don't start with colors and fonts. I start with your business — who your customers are, what makes
-                    them trust you, and what's stopping them from picking up the phone. Then I design around those insights.
+                    I don't start with color palettes or design trends. I start with your business — who's calling you, what they need to see to trust you, and what's stopping them from picking up the phone. Design decisions flow from that understanding, not creative preference.
                   </p>
 
-                  <h2 className="text-xl font-bold text-foreground pt-4">Design philosophy</h2>
+                  <h2 className="text-xl font-bold text-foreground pt-4">My philosophy</h2>
                   <p>
-                    Clean over clever. Premium over flashy. Every element earns its place on the page. I believe the best
-                    design is the one your customers don't notice — because it just works. They feel trust, they see clarity,
-                    and they take action.
+                    Your website has one job: drive revenue. Everything else is secondary. I build for clarity over cleverness, conversion over aesthetics, and business results over award-worthy design. If it doesn't help you win business, it doesn't belong on your site.
                   </p>
 
-                  <h2 className="text-xl font-bold text-foreground pt-4">What I value in client work</h2>
+                  <h2 className="text-xl font-bold text-foreground pt-4">What drives every decision I make</h2>
                   <ul className="space-y-2">
                     {[
-                      "Clear communication and honest expectations",
-                      "Strategy before aesthetics",
-                      "Results you can measure, not just admire",
-                      "Respect for your time and your customers' experience",
-                      "Long-term partnerships over one-off transactions",
+                      "Revenue impact first — aesthetics second",
+                      "Speed isn't optional. Every second costs you money.",
+                      "Your customers don't care about your services — they care about their problems",
+                      "Conversion isn't luck. It's strategic design.",
+                      "I build for years, not just launch day",
                     ].map((v) => (
                       <li key={v} className="flex items-start gap-2">
                         <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
@@ -74,11 +68,9 @@ const About = () => (
                     ))}
                   </ul>
 
-                  <h2 className="text-xl font-bold text-foreground pt-4">Who I work best with</h2>
+                  <h2 className="text-xl font-bold text-foreground pt-4">Who I partner with</h2>
                   <p>
-                    Business owners who take their brand seriously. Companies that understand a website is a business
-                    asset — not an expense. Teams that value quality, clarity, and results. If that sounds like you,
-                    we'll get along great.
+                    HVAC companies, plumbers, and electricians who treat their website as a competitive advantage, not a necessary evil. Business owners who understand that cheap websites cost more in lost revenue than they save upfront. Teams ready to invest in work that drives real results. If that's you, let's talk.
                   </p>
                 </div>
               </div>

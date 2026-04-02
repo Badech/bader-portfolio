@@ -5,48 +5,46 @@ import { ArrowRight, Zap } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup.jpg";
 
 const Hero = () => (
-  <section className="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24 section-padding">
+  <section className="relative overflow-hidden pt-32 md:pt-40 lg:pt-44 pb-20 md:pb-28 lg:pb-32 section-padding">
     <div className="container-wide">
-      <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        <div className="max-w-xl">
+      <div className="grid lg:grid-cols-[1.1fr,1fr] gap-16 lg:gap-20 items-center">
+        <div className="max-w-2xl lg:max-w-none">
           <Reveal>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 border border-primary/10 text-primary text-xs font-semibold mb-6">
-              <Zap size={14} />
-              Conversion-focused web design
+            <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-primary/[0.03] border border-primary/[0.08] text-primary text-[13px] font-semibold mb-8 backdrop-blur-sm">
+              <Zap size={13} strokeWidth={2.5} />
+              Independent Web Partner for Service Businesses
             </div>
           </Reveal>
 
           <Reveal delay={0.05}>
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.1] font-extrabold mb-5">
-              Premium websites that turn visitors into{" "}
-              <span className="text-gradient">calls & leads</span>
+            <h1 className="text-[2.75rem] sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] leading-[1.06] font-extrabold mb-7 tracking-[-0.02em]">
+              Your HVAC or service business deserves a website that{" "}
+              <span className="text-gradient">generates calls, not just traffic</span>
             </h1>
           </Reveal>
 
           <Reveal delay={0.1}>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-md">
-              I help U.S. service businesses — HVAC, plumbing, electrical — build
-              websites that look premium, load fast, and convert traffic into booked
-              jobs.
+            <p className="text-[1.0625rem] leading-[1.7] text-muted-foreground mb-10 max-w-xl">
+              I'm your independent web partner, not a freelancer with a portfolio. I build conversion-focused websites for U.S. HVAC companies, plumbers, and electricians who need a premium online presence that drives real business growth.
             </p>
           </Reveal>
 
           <Reveal delay={0.15}>
-            <div className="flex flex-wrap gap-3">
-              <Button variant="hero" size="xl" asChild>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button variant="hero" size="xl" asChild className="shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30">
                 <Link to="/contact">
-                  Book a Call <ArrowRight size={16} />
+                  Get a Strategy Call <ArrowRight size={16} strokeWidth={2.5} />
                 </Link>
               </Button>
               <Button variant="hero-outline" size="xl" asChild>
-                <Link to="/contact">Get a Free Audit</Link>
+                <Link to="/contact">See Your Website Audit</Link>
               </Button>
             </div>
           </Reveal>
         </div>
 
-        <Reveal delay={0.2} className="relative">
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-border/50">
+        <Reveal delay={0.2} className="relative lg:-mr-8 xl:-mr-12">
+          <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_70px_-12px_rgba(0,0,0,0.15)] border border-border/60">
             <img
               src={heroMockup}
               alt="Premium HVAC website design mockup on laptop and mobile devices"

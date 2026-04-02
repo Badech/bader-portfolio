@@ -60,17 +60,17 @@ const Process = () => (
             <Reveal key={s.num} delay={i * 0.06}>
               <div className="flex gap-6 items-start group">
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 rounded-full border-2 border-primary/20 bg-card flex items-center justify-center text-sm font-bold text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                  <div className="w-12 h-12 rounded-full border-2 border-primary/20 bg-card flex items-center justify-center text-sm font-bold text-primary group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300">
                     {s.num}
                   </div>
                   {i < steps.length - 1 && <div className="w-px h-full min-h-[100px] bg-border" />}
                 </div>
-                <div className="pb-12">
+                <div className="pb-14">
                   <h2 className="text-xl md:text-2xl font-bold mb-3">{s.title}</h2>
-                  <p className="text-muted-foreground leading-relaxed mb-4">{s.desc}</p>
+                  <p className="text-muted-foreground leading-relaxed mb-5">{s.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {s.details.map((d) => (
-                      <span key={d} className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">
+                      <span key={d} className="px-3 py-1.5 text-xs font-medium rounded-full bg-secondary text-secondary-foreground">
                         {d}
                       </span>
                     ))}

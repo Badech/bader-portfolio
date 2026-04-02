@@ -6,10 +6,10 @@ import portrait from "@/assets/portrait.jpg";
 const AboutPreview = () => (
   <section className="section-padding section-gap bg-section-alt">
     <div className="container-wide">
-      <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="grid lg:grid-cols-[0.95fr,1.05fr] gap-16 lg:gap-20 items-center">
         <Reveal>
-          <div className="relative max-w-sm mx-auto md:mx-0">
-            <div className="rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative max-w-md mx-auto md:mx-0">
+            <div className="rounded-2xl overflow-hidden shadow-[0_20px_70px_-12px_rgba(0,0,0,0.15)] border border-border/60">
               <img
                 src={portrait}
                 alt="Bader Echchalh — web designer and conversion specialist"
@@ -24,22 +24,17 @@ const AboutPreview = () => (
 
         <Reveal delay={0.1}>
           <div>
-            <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">About</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-5">
-              Design, code, and conversion — all in one person
+            <h2 className="text-[2.25rem] md:text-[2.75rem] lg:text-5xl font-extrabold mb-6 leading-[1.12] tracking-[-0.02em]">
+              Your independent web partner, not another freelancer
             </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              I'm Bader Echchalh — a freelance web designer, front-end developer, and conversion specialist.
-              I combine premium visual design with strategic thinking to build websites that look incredible
-              and actually grow businesses.
+            <p className="text-muted-foreground/80 leading-[1.7] mb-5 text-[0.9375rem]">
+              I'm Bader Echchalh — I help HVAC companies, plumbers, and electricians compete and win online. Unlike typical freelancers, I approach your website as a strategic business asset, not a creative project.
             </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              My focus is U.S. service businesses — HVAC companies, plumbers, electricians, and local brands
-              that need a website worthy of their reputation. No templates. No fluff. Just clean execution
-              that drives measurable results.
+            <p className="text-muted-foreground/80 leading-[1.7] mb-8 text-[0.9375rem]">
+              I work with service business owners who understand that in today's market, your website is your most important sales tool. My work focuses on positioning, trust, conversion, and lead generation — because beautiful design means nothing if it doesn't drive revenue.
             </p>
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/about">Learn More About Me</Link>
+            <Button variant="default" size="lg" asChild className="shadow-md hover:shadow-lg transition-shadow">
+              <Link to="/about">More About Me →</Link>
             </Button>
           </div>
         </Reveal>

@@ -45,7 +45,9 @@ const Contact = () => {
                       <div className="w-9 h-9 rounded-lg bg-primary/5 flex items-center justify-center">
                         <Mail size={16} className="text-primary" />
                       </div>
-                      hello@baderechchalh.com
+                      <a href="mailto:Bader.echchalh1@gmail.com" className="hover:text-foreground transition-colors">
+                        Bader.echchalh1@gmail.com
+                      </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
                       <div className="w-9 h-9 rounded-lg bg-primary/5 flex items-center justify-center">

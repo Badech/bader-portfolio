@@ -53,14 +53,14 @@ const Services = () => (
   <>
     <Navbar />
     <main className="pt-24 md:pt-32">
-      <section className="section-padding pb-16">
+      <section className="section-padding pb-20 md:pb-24">
         <div className="container-wide">
           <Reveal>
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold text-primary mb-3 uppercase tracking-wider">Services</p>
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-5">Web design that drives measurable business growth</h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Every service I offer is built around one goal: helping your business generate more trust, more leads, and more revenue through a premium online presence.
+              <p className="text-[11px] font-bold text-primary/80 mb-4 uppercase tracking-[0.15em]">Services</p>
+              <h1 className="text-[2.75rem] md:text-5xl lg:text-[3.5rem] font-extrabold mb-6 leading-[1.08] tracking-[-0.02em]">What I offer</h1>
+              <p className="text-[1.0625rem] text-muted-foreground/90 leading-[1.7]">
+                Focused services designed to help HVAC and local service businesses generate more leads, earn more trust, and convert better.
               </p>
             </div>
           </Reveal>
@@ -68,18 +68,18 @@ const Services = () => (
       </section>
 
       <section className="section-padding pb-20">
-        <div className="container-wide space-y-8">
+        <div className="container-wide space-y-6">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.06}>
-              <div className="p-8 md:p-10 rounded-xl border border-border bg-card hover:border-primary/15 transition-colors">
+              <div className="p-8 md:p-10 rounded-[14px] border border-border/60 bg-card hover:border-primary/30 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 ease-out">
                 <div className="flex items-start gap-5">
-                  <div className="w-11 h-11 rounded-lg bg-primary/5 flex items-center justify-center shrink-0">
-                    <s.icon size={22} className="text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/[0.04] flex items-center justify-center shrink-0">
+                    <s.icon size={21} className="text-primary" strokeWidth={2.25} />
                   </div>
                   <div className="flex-1">
-                    <h2 className="text-xl md:text-2xl font-bold mb-4">{s.title}</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+                    <h2 className="text-[1.5rem] md:text-[1.75rem] font-bold mb-5 tracking-tight leading-[1.25]">{s.title}</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                      <div className="space-y-4 text-[0.9375rem] text-muted-foreground/80 leading-[1.7]">
                         <div>
                           <p className="font-semibold text-foreground mb-1">Who it's for</p>
                           <p>{s.who}</p>
